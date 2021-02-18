@@ -1,0 +1,272 @@
+{
+    "name": "RelatotioCliete.xds",
+    "projectId": "80532749-B28B-4B0F-B9C5-AB25315E900D",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "RelMovCli",
+            "snapToGrid": 5,
+            "userConfig": {
+                "title": "Relátorio de Movimento de cliente",
+                "width": 806,
+                "height": 438,
+                "layout": "absolute",
+                "resizable": false
+            },
+            "cn": [
+                {
+                    "id": "MyContainer",
+                    "cid": "container",
+                    "jsClass": "MyContainer",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "width": 180,
+                        "height": 30,
+                        "x": -7,
+                        "y": 10,
+                        "layout": "form",
+                        "labelAlign": "right",
+                        "labelWidth": 70
+                    },
+                    "cn": [
+                        {
+                            "id": "MyDateField",
+                            "cid": "datefield",
+                            "jsClass": "MyDateField",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Periodo",
+                                "anchor": "100%",
+                                "id": "<?php echo $namespace?>txtdatainicial",
+                                "selectOnFocus": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyContainer1",
+                    "cid": "container",
+                    "jsClass": "MyContainer",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "width": 180,
+                        "height": 40,
+                        "x": 135,
+                        "y": 10,
+                        "layout": "form",
+                        "labelAlign": "right",
+                        "labelWidth": 70
+                    },
+                    "cn": [
+                        {
+                            "id": "MyDateField1",
+                            "cid": "datefield",
+                            "jsClass": "MyDateField1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "até",
+                                "anchor": "100%",
+                                "id": "<?php echo $namespace?>txtdatafinal",
+                                "selectOnFocus": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyContainer2",
+                    "cid": "container",
+                    "jsClass": "MyContainer",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "width": 400,
+                        "height": 35,
+                        "x": 295,
+                        "y": 10,
+                        "layout": "form",
+                        "labelAlign": "right",
+                        "labelWidth": 70
+                    },
+                    "cn": [
+                        {
+                            "id": "MyCombo",
+                            "cid": "combobox",
+                            "jsClass": "MyCombo",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Cliente",
+                                "anchor": "100%",
+                                "id": "<?php echo $namespace?>idcliente",
+                                "selectOnFocus": true,
+                                "forceSelection": true,
+                                "store": "storecliente<?php echo $namespace?>",
+                                "triggerAction": "all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyButton",
+                    "cid": "button",
+                    "jsClass": "MyButton",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Pesquisa",
+                        "x": 700,
+                        "y": 10,
+                        "width": 80,
+                        "id": "<?php echo $namespace?>cmdpesq"
+                    }
+                },
+                {
+                    "id": "MyButton1",
+                    "cid": "button",
+                    "jsClass": "MyButton",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Cancelar",
+                        "x": 700,
+                        "y": 380,
+                        "width": 80,
+                        "id": "<?php echo $namespace?>cmdcancelar"
+                    }
+                },
+                {
+                    "id": "MyButton2",
+                    "cid": "button",
+                    "jsClass": "MyButton",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Imprimir",
+                        "x": 5,
+                        "y": 380,
+                        "width": 80,
+                        "id": "<?php echo $namespace?>cmdimprimir"
+                    }
+                },
+                {
+                    "id": "MyGrid",
+                    "cid": "grid",
+                    "jsClass": "MyGrid",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Simples",
+                        "store": "dados<?php echo $namespace?>",
+                        "x": 5,
+                        "y": 40,
+                        "width": 775,
+                        "height": 335,
+                        "id": "<?php echo $namespace?>gridsimples"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyColumn",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "os",
+                                "header": "OS",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 70
+                            }
+                        },
+                        {
+                            "id": "MyColumn1",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "codigo",
+                                "header": "Código",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 70
+                            }
+                        },
+                        {
+                            "id": "MyColumn2",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "cliente",
+                                "header": "Cliente",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 165
+                            }
+                        },
+                        {
+                            "id": "MyColumn3",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "fantasia",
+                                "header": "Fantasia",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 165
+                            }
+                        },
+                        {
+                            "id": "MyColumn4",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "doc",
+                                "header": "CNPJ/;CPF",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100
+                            }
+                        },
+                        {
+                            "id": "MyColumn5",
+                            "cid": "numbercolumn",
+                            "jsClass": "MyColumn1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "valor",
+                                "header": "Valor",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100,
+                                "align": "right"
+                            }
+                        },
+                        {
+                            "id": "MyColumn6",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "data",
+                                "header": "Data",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 85
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

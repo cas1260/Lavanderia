@@ -1,0 +1,130 @@
+{
+    "name": "rota.xds",
+    "projectId": "183DCB2B-9A9F-44CE-AC07-C8036B1B859F",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "cadrota",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Cadastro de rota",
+                "width": 407,
+                "height": 212
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyPanel",
+                    "snapToGrid": 5,
+                    "userConfig": {
+                        "title": "",
+                        "width": 393,
+                        "height": 180,
+                        "layout": "absolute",
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": -36,
+                                "y": 15,
+                                "width": 420,
+                                "height": 135,
+                                "layout": "form",
+                                "labelAlign": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Código",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 100,
+                                        "id": "<?php echo $namespace?>codigo",
+                                        "itemId": "<?php echo $namespace?>codigo",
+                                        "name": "<?php echo $namespace?>codigo",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Descrição",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>descricao",
+                                        "itemId": "<?php echo $namespace?>descricao",
+                                        "name": "<?php echo $namespace?>descricao",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextArea",
+                                    "cid": "textarea",
+                                    "jsClass": "MyTextArea",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "anchor": "100%",
+                                        "fieldLabel": "Obs.",
+                                        "id": "<?php echo $namespace?>obs",
+                                        "itemId": "<?php echo $namespace?>obs",
+                                        "name": "<?php echo $namespace?>obs"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "x": 310,
+                                "y": 145,
+                                "width": 75
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 65,
+                                "y": 145,
+                                "width": 75
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

@@ -1,0 +1,156 @@
+{
+    "name": "Apropriacao.xds",
+    "projectId": "A9F22B4B-C2F8-4DE1-A63E-84FEA327A07F",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "MyWindow",
+            "snapToGrid": 5,
+            "userConfig": {
+                "title": "Apropriação de valor por fornecedor",
+                "width": 918,
+                "height": 506,
+                "iconCls": "baixadetitulo16",
+                "layout": "absolute",
+                "modal": true
+            },
+            "cn": [
+                {
+                    "id": "MyEditorGrid",
+                    "cid": "editorgrid",
+                    "jsClass": "MyEditorGrid",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Fornecedores",
+                        "store": "dadosfornecedor",
+                        "width": 837,
+                        "height": 338,
+                        "anchor": "100% 100%",
+                        "x": 228,
+                        "y": 0,
+                        "id": "grid"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyColumn1",
+                            "cid": "numbercolumn",
+                            "jsClass": "MyColumn1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "number",
+                                "header": "Fornecedor",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100,
+                                "align": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyNumberField",
+                                    "cid": "numberfield",
+                                    "jsClass": "MyNumberField",
+                                    "snapToGrid": 10
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MyToolbar",
+                    "cid": "toolbar",
+                    "jsClass": "MyToolbar",
+                    "dock": "bbar",
+                    "snapToGrid": 10,
+                    "cn": [
+                        {
+                            "id": "MyButton2",
+                            "cid": "button",
+                            "jsClass": "MyButton2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Pesquisar produtos",
+                                "id": "cmdpesq",
+                                "width": 150
+                            }
+                        },
+                        {
+                            "id": "MyFill",
+                            "cid": "tbfill",
+                            "jsClass": "MyFill",
+                            "snapToGrid": 10
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "width": 150,
+                                "id": "cmdsalvar"
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Imprimir",
+                                "width": 150,
+                                "id": "cmdimprmir"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyTreePanel",
+                    "cid": "treepanel",
+                    "jsClass": "MyTreePanel",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Produtos",
+                        "x": 0,
+                        "y": 0,
+                        "width": 220,
+                        "height": 450,
+                        "anchor": "25% 100%"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyAsyncTreeNode",
+                            "cid": "asynctreenode",
+                            "jsClass": "MyAsyncTreeNode",
+                            "dock": "root",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Tree Node"
+                            }
+                        },
+                        {
+                            "id": "MyTreeLoader",
+                            "cid": "treeloader",
+                            "jsClass": "MyTreeLoader",
+                            "dock": "loader",
+                            "snapToGrid": 10
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

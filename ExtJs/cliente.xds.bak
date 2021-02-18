@@ -1,0 +1,805 @@
+{
+    "name": "cliente.xds",
+    "projectId": "F0EAB212-CB22-4940-8325-D538877C46BC",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "cadcliente",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Cadastro de Cliente",
+                "width": 670,
+                "height": 439,
+                "iconCls": "cliente16"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 5,
+                    "userConfig": {
+                        "title": "",
+                        "width": 768,
+                        "height": 462,
+                        "layout": "absolute",
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post",
+                        "autoScroll": "-ext-undefined-"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 5,
+                                "y": 10,
+                                "width": 175,
+                                "height": 40,
+                                "layout": "form",
+                                "labelAlign": "right",
+                                "labelPad": "-ext-undefined-",
+                                "labelWidth": 50
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Codigo",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>codigo",
+                                        "itemId": "<?php echo $namespace?>codigo",
+                                        "name": "<?php echo $namespace?>codigo"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyContainer1",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 180,
+                                "y": 10,
+                                "width": 470,
+                                "height": 35,
+                                "layout": "form",
+                                "labelAlign": "right",
+                                "labelPad": "-ext-undefined-",
+                                "labelWidth": 50
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Cliente",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>nome",
+                                        "itemId": "<?php echo $namespace?>nome",
+                                        "name": "<?php echo $namespace?>nome"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyTabPanel",
+                            "cid": "tabpanel",
+                            "jsClass": "MyTabPanel",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "activeTab": 1,
+                                "x": 15,
+                                "y": 40,
+                                "width": 635,
+                                "height": 325
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyPanel",
+                                    "cid": "panel",
+                                    "jsClass": "MyPanel",
+                                    "snapToGrid": 5,
+                                    "userConfig": {
+                                        "title": "Dados basicos",
+                                        "height": 31,
+                                        "layout": "absolute"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyContainer2",
+                                            "cid": "container",
+                                            "jsClass": "MyContainer2",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "x": 10,
+                                                "y": 5,
+                                                "width": 280,
+                                                "height": 270,
+                                                "layout": "form",
+                                                "labelAlign": "right"
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyCombo",
+                                                    "cid": "combobox",
+                                                    "jsClass": "MyCombo",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Tipo de pessoa",
+                                                        "anchor": "100%",
+                                                        "triggerAction": "all",
+                                                        "id": "<?php echo $namespace?>tipo",
+                                                        "itemId": "<?php echo $namespace?>tipo",
+                                                        "name": "<?php echo $namespace?>tipo",
+                                                        "store": "tipo<?php echo $namespace?>"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField2",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "CPF/CNPJ",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>doc",
+                                                        "itemId": "<?php echo $namespace?>doc",
+                                                        "name": "<?php echo $namespace?>doc"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField3",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "I. Estadual",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>estadual",
+                                                        "itemId": "<?php echo $namespace?>estadual",
+                                                        "name": "<?php echo $namespace?>estadual"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField4",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "I. Municipal",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>municipal",
+                                                        "itemId": "<?php echo $namespace?>municipal",
+                                                        "name": "<?php echo $namespace?>municipal"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField5",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField12",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Contato",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>contato",
+                                                        "itemId": "<?php echo $namespace?>contato",
+                                                        "name": "<?php echo $namespace?>contato"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField6",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField12",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "E-mail",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>email",
+                                                        "itemId": "<?php echo $namespace?>email",
+                                                        "name": "<?php echo $namespace?>email"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField7",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField13",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Telefone",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>telefone",
+                                                        "itemId": "<?php echo $namespace?>telefone",
+                                                        "name": "<?php echo $namespace?>telefone",
+                                                        "style": "<?php echo $ptel;?>"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField8",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField14",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Celular",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>celular",
+                                                        "itemId": "<?php echo $namespace?>celular",
+                                                        "name": "<?php echo $namespace?>celular",
+                                                        "style": "<?php echo $ptel;?>"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField9",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField15",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Fax",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>fax",
+                                                        "itemId": "<?php echo $namespace?>fax",
+                                                        "name": "<?php echo $namespace?>fax",
+                                                        "style": "<?php echo $ptel;?>"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyDateField",
+                                                    "cid": "datefield",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Data incio",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>inicio",
+                                                        "itemId": "<?php echo $namespace?>inicio",
+                                                        "name": "<?php echo $namespace?>inicio"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyDateField1",
+                                                    "cid": "datefield",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Data de reajuste",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>reajuste",
+                                                        "itemId": "<?php echo $namespace?>reajuste",
+                                                        "name": "<?php echo $namespace?>reajuste"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyContainer3",
+                                            "cid": "container",
+                                            "jsClass": "MyContainer2",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "x": 300,
+                                                "y": 5,
+                                                "width": 310,
+                                                "height": 270,
+                                                "layout": "form",
+                                                "labelAlign": "right"
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTreePanel",
+                                                    "cid": "treepanel",
+                                                    "jsClass": "MyTreePanel",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "title": "",
+                                                        "width": 203,
+                                                        "height": 115,
+                                                        "fieldLabel": "Rota",
+                                                        "lines": false,
+                                                        "floating": "-ext-undefined-",
+                                                        "rootVisible": false,
+                                                        "autoScroll": true,
+                                                        "autoLoad": "-ext-undefined-",
+                                                        "id": "<?php echo $namespace?>rota",
+                                                        "itemId": "<?php echo $namespace?>rota"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "MyAsyncTreeNode",
+                                                            "cid": "asynctreenode",
+                                                            "jsClass": "MyAsyncTreeNode",
+                                                            "dock": "root",
+                                                            "snapToGrid": 10,
+                                                            "userConfig": {
+                                                                "text": "Tree Node"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "MyTreeLoader",
+                                                            "cid": "treeloader",
+                                                            "jsClass": "MyTreeLoader",
+                                                            "dock": "loader",
+                                                            "snapToGrid": 10
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "MyTextArea",
+                                                    "cid": "textarea",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Extra",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>extra",
+                                                        "itemId": "<?php echo $namespace?>extra",
+                                                        "name": "<?php echo $namespace?>extra",
+                                                        "height": 50
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextArea1",
+                                                    "cid": "textarea",
+                                                    "jsClass": "MyTextField16",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Extra 2",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>extra2",
+                                                        "itemId": "<?php echo $namespace?>extra2",
+                                                        "name": "<?php echo $namespace?>extra2",
+                                                        "height": 50
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextArea2",
+                                                    "cid": "textarea",
+                                                    "jsClass": "MyCombo",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Extra 3",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>extra3",
+                                                        "itemId": "<?php echo $namespace?>extra3",
+                                                        "name": "<?php echo $namespace?>extra3",
+                                                        "height": 50
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyPanel1",
+                                    "cid": "panel",
+                                    "jsClass": "MyPanel1",
+                                    "snapToGrid": 5,
+                                    "userConfig": {
+                                        "title": "Endereço",
+                                        "layout": "absolute"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyFieldSet",
+                                            "cid": "fieldset",
+                                            "jsClass": "MyFieldSet",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "title": "Endereço de Cobrança",
+                                                "x": 5,
+                                                "y": 5,
+                                                "height": 190,
+                                                "width": 305,
+                                                "layout": "-ext-undefined-",
+                                                "labelWidth": 55,
+                                                "labelAlign": "right"
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTextField10",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField2",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Endereço",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>endereco1",
+                                                        "itemId": "<?php echo $namespace?>endereco1",
+                                                        "name": "<?php echo $namespace?>endereco1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField11",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField2",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Numero",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>numero1",
+                                                        "itemId": "<?php echo $namespace?>numero1",
+                                                        "name": "<?php echo $namespace?>numero1",
+                                                        "boxMinWidth": "-ext-undefined-",
+                                                        "boxMaxWidth": 50
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField13",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField3",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Bairro",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>bairro1",
+                                                        "itemId": "<?php echo $namespace?>bairro1",
+                                                        "name": "<?php echo $namespace?>bairro1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField14",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField4",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Cidade",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>cidade1",
+                                                        "itemId": "<?php echo $namespace?>cidade1",
+                                                        "name": "<?php echo $namespace?>cidade1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField15",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField5",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Cep",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>cep1",
+                                                        "itemId": "<?php echo $namespace?>cep1",
+                                                        "name": "<?php echo $namespace?>cep1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField16",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField6",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "UF",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>estado1",
+                                                        "itemId": "<?php echo $namespace?>estado1",
+                                                        "name": "<?php echo $namespace?>estado1",
+                                                        "boxMaxWidth": 50
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyFieldSet1",
+                                            "cid": "fieldset",
+                                            "jsClass": "MyFieldSet",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "title": "Endereço de coleta",
+                                                "x": 325,
+                                                "y": 5,
+                                                "height": 190,
+                                                "width": 295,
+                                                "layout": "-ext-undefined-",
+                                                "labelWidth": 55,
+                                                "labelAlign": "right"
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTextField17",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField2",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Endereço",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>endereco",
+                                                        "itemId": "<?php echo $namespace?>endereco",
+                                                        "name": "<?php echo $namespace?>endereco",
+                                                        "width": 122
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField12",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField2",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Numero",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>numero",
+                                                        "itemId": "<?php echo $namespace?>numero",
+                                                        "name": "<?php echo $namespace?>numero",
+                                                        "boxMinWidth": "-ext-undefined-",
+                                                        "boxMaxWidth": 50
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField18",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField3",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Bairro",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>bairro",
+                                                        "itemId": "<?php echo $namespace?>bairro",
+                                                        "name": "<?php echo $namespace?>bairro"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField19",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField4",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Cidade",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>cidade",
+                                                        "itemId": "<?php echo $namespace?>cidade",
+                                                        "name": "<?php echo $namespace?>cidade"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField20",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField5",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "Cep",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>cep",
+                                                        "itemId": "<?php echo $namespace?>cep",
+                                                        "name": "<?php echo $namespace?>cep"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField21",
+                                                    "cid": "textfield",
+                                                    "jsClass": "MyTextField6",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "fieldLabel": "UF",
+                                                        "anchor": "100%",
+                                                        "id": "<?php echo $namespace?>estado",
+                                                        "itemId": "<?php echo $namespace?>estado",
+                                                        "name": "<?php echo $namespace?>estado"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyFieldSet2",
+                                            "cid": "fieldset",
+                                            "jsClass": "MyFieldSet2",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "title": "Observações",
+                                                "x": 5,
+                                                "y": 195,
+                                                "width": 615,
+                                                "height": 80,
+                                                "layout": "absolute"
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTextArea3",
+                                                    "cid": "textarea",
+                                                    "jsClass": "MyTextArea",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "anchor": "100%",
+                                                        "fieldLabel": "",
+                                                        "id": "<?php echo $namespace?>obs",
+                                                        "itemId": "<?php echo $namespace?>obs",
+                                                        "name": "<?php echo $namespace?>obs",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "height": 45
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyPanel2",
+                                    "cid": "panel",
+                                    "jsClass": "MyPanel2",
+                                    "snapToGrid": 5,
+                                    "userConfig": {
+                                        "title": "Tabela de preço",
+                                        "layout": "absolute"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyGrid",
+                                            "cid": "grid",
+                                            "jsClass": "MyGrid",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "title": "",
+                                                "store": "gridclienteservico<?php echo $namespace?>",
+                                                "x": -1,
+                                                "y": 50,
+                                                "width": 635,
+                                                "height": 235,
+                                                "border": false
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyColumn",
+                                                    "cid": "gridcolumn",
+                                                    "jsClass": "MyColumn",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "dataIndex": "descricao",
+                                                        "header": "Serviço",
+                                                        "sortable": true,
+                                                        "resizable": "-ext-undefined-",
+                                                        "width": 500,
+                                                        "editable": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyColumn1",
+                                                    "cid": "numbercolumn",
+                                                    "jsClass": "MyColumn1",
+                                                    "snapToGrid": 10,
+                                                    "userConfig": {
+                                                        "dataIndex": "valor",
+                                                        "header": "Valor",
+                                                        "sortable": true,
+                                                        "resizable": "-ext-undefined-",
+                                                        "width": 100,
+                                                        "align": "right",
+                                                        "editable": false
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyLabel",
+                                            "cid": "label",
+                                            "jsClass": "MyLabel",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Serviço",
+                                                "x": 5,
+                                                "y": 5,
+                                                "width": 55
+                                            }
+                                        },
+                                        {
+                                            "id": "MyLabel1",
+                                            "cid": "label",
+                                            "jsClass": "MyLabel",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Valor",
+                                                "x": 365,
+                                                "y": 5,
+                                                "width": 55
+                                            }
+                                        },
+                                        {
+                                            "id": "MyCombo1",
+                                            "cid": "combobox",
+                                            "jsClass": "MyCombo2",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "x": 5,
+                                                "y": 20,
+                                                "width": 355,
+                                                "resizable": true,
+                                                "id": "<?php echo $namespace?>0servico",
+                                                "itemId": "<?php echo $namespace?>0servico",
+                                                "name": "<?php echo $namespace?>0servico"
+                                            }
+                                        },
+                                        {
+                                            "id": "MyNumberField",
+                                            "cid": "numberfield",
+                                            "jsClass": "MyNumberField",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "x": 365,
+                                                "y": 20,
+                                                "width": 90,
+                                                "id": "<?php echo $namespace?>0valor",
+                                                "itemId": "<?php echo $namespace?>0valor",
+                                                "name": "<?php echo $namespace?>0valor",
+                                                "decimalSeparator": ",",
+                                                "preventMark": true
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton",
+                                            "cid": "button",
+                                            "jsClass": "MyButton",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Adicionar",
+                                                "x": 465,
+                                                "y": 20,
+                                                "width": 80
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton1",
+                                            "cid": "button",
+                                            "jsClass": "MyButton",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Remover",
+                                                "x": 550,
+                                                "y": 20,
+                                                "width": 80
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton2",
+                            "cid": "button",
+                            "jsClass": "MyButton2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "x": 555,
+                                "y": 375,
+                                "width": 95,
+                                "height": 22
+                            }
+                        },
+                        {
+                            "id": "MyButton3",
+                            "cid": "button",
+                            "jsClass": "MyButton2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 15,
+                                "y": 375,
+                                "width": 95,
+                                "height": 22
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

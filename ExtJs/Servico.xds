@@ -1,0 +1,211 @@
+{
+    "name": "Servico.xds",
+    "projectId": "485D61CB-EF81-4CBD-B963-067CF162113B",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "cadserver",
+            "snapToGrid": 0,
+            "userConfig": {
+                "title": "Cadastro de serviço",
+                "width": 525,
+                "height": 307,
+                "modal": true,
+                "iconCls": "servicos16",
+                "layout": "absolute"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 0,
+                    "userConfig": {
+                        "title": "",
+                        "x": -1,
+                        "y": -2,
+                        "width": 531,
+                        "height": 281,
+                        "layout": "absolute",
+                        "border": false,
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyFieldSet",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "",
+                                "x": 14,
+                                "y": 9,
+                                "width": 490,
+                                "height": 231,
+                                "layout": "-ext-undefined-",
+                                "labelAlign": "right",
+                                "border": "-ext-undefined-"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Codigo",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>codigo",
+                                        "itemId": "<?php echo $namespace?>codigo",
+                                        "name": "<?php echo $namespace?>codigo",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Descrição",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>descricao",
+                                        "itemId": "<?php echo $namespace?>descricao",
+                                        "name": "<?php echo $namespace?>descricao",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField3",
+                                    "cid": "numberfield",
+                                    "jsClass": "MyTextField3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Preço Unitario",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>precounitario",
+                                        "itemId": "<?php echo $namespace?>precounitario",
+                                        "name": "<?php echo $namespace?>precounitario",
+                                        "allowBlank": false,
+                                        "allowNegative": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField2",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Unidade",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>unidade",
+                                        "itemId": "<?php echo $namespace?>unidade",
+                                        "name": "<?php echo $namespace?>unidade"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField4",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField4",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Preço SN",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>precosn",
+                                        "itemId": "<?php echo $namespace?>precosn",
+                                        "name": "<?php echo $namespace?>precosn"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField5",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField5",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "RC",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>rc",
+                                        "itemId": "<?php echo $namespace?>rc",
+                                        "name": "<?php echo $namespace?>rc"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField6",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField6",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "QTD",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>qtd",
+                                        "itemId": "<?php echo $namespace?>qtd",
+                                        "name": "<?php echo $namespace?>qtd"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField7",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField7",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Imposto",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 70,
+                                        "id": "<?php echo $namespace?>imposto",
+                                        "itemId": "<?php echo $namespace?>imposto",
+                                        "name": "<?php echo $namespace?>imposto"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 14,
+                                "y": 244,
+                                "width": 98
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "x": 407,
+                                "y": 244,
+                                "width": 98
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

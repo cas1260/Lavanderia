@@ -1,0 +1,209 @@
+{
+    "name": "RelRotas.xds",
+    "projectId": "7AE74AD2-33C3-4311-A6B4-EC700066801C",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "MyWindow",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Relatório de rotas",
+                "width": 811,
+                "height": 464,
+                "layout": "anchor",
+                "id": "<?php echo $namespace?>WinRel",
+                "itemId": "<?php echo $namespace?>WinRel"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 5,
+                    "userConfig": {
+                        "title": "",
+                        "x": 200,
+                        "y": 150,
+                        "width": 700,
+                        "height": 430,
+                        "layout": "absolute",
+                        "anchor": "100% 100%",
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": -1,
+                                "y": 10,
+                                "width": 350,
+                                "height": 90,
+                                "layout": "form",
+                                "labelAlign": "right",
+                                "labelWidth": 70
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "combobox",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Bairro",
+                                        "anchor": "100%",
+                                        "allowBlank": "-ext-undefined-",
+                                        "triggerAction": "all",
+                                        "id": "<?php echo $namespace?>cbobairro",
+                                        "itemId": "<?php echo $namespace?>cbobairro",
+                                        "name": "<?php echo $namespace?>cbobairro",
+                                        "store": "bairro<?php echo $namespace?>"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "combobox",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Municipio",
+                                        "anchor": "100%",
+                                        "allowBlank": "-ext-undefined-",
+                                        "id": "<?php echo $namespace?>municipio",
+                                        "itemId": "<?php echo $namespace?>municipio",
+                                        "name": "<?php echo $namespace?>municipio",
+                                        "store": "municipio<?php echo $namespace?>"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField2",
+                                    "cid": "combobox",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Grupo",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>grupo",
+                                        "itemId": "<?php echo $namespace?>grupo",
+                                        "name": "<?php echo $namespace?>grupo",
+                                        "store": "grupo<?php echo $namespace?>"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyTreePanel",
+                            "cid": "treepanel",
+                            "jsClass": "MyTreePanel",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "",
+                                "x": 355,
+                                "y": 10,
+                                "width": 430,
+                                "height": 75,
+                                "id": "<?php echo $namespace;?>rota",
+                                "itemId": "<?php echo $namespace;?>rota",
+                                "lines": false,
+                                "rootVisible": false,
+                                "autoScroll": true
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyAsyncTreeNode",
+                                    "cid": "asynctreenode",
+                                    "jsClass": "MyAsyncTreeNode",
+                                    "dock": "root",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Tree Node"
+                                    }
+                                },
+                                {
+                                    "id": "MyTreeLoader",
+                                    "cid": "treeloader",
+                                    "jsClass": "MyTreeLoader",
+                                    "dock": "loader",
+                                    "snapToGrid": 10
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Buscar",
+                                "x": 665,
+                                "y": 95,
+                                "width": 120,
+                                "id": "<?php echo $namespace?>cmdBusca"
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Imprimir",
+                                "x": 535,
+                                "y": 95,
+                                "width": 120,
+                                "id": "<?php echo $namespace?>cmdImprimir"
+                            }
+                        },
+                        {
+                            "id": "MyGrid",
+                            "cid": "grid",
+                            "jsClass": "MyGrid",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Resultado do filtro",
+                                "store": "(none)",
+                                "x": 10,
+                                "y": 130,
+                                "width": 775,
+                                "height": 290,
+                                "id": "<?php echo $namespace;?>gridReport"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyColumn",
+                                    "cid": "gridcolumn",
+                                    "jsClass": "MyColumn",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "dataIndex": "cliente",
+                                        "header": "Cliente",
+                                        "sortable": true,
+                                        "resizable": "-ext-undefined-",
+                                        "width": 750
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

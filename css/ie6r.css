@@ -1,0 +1,229 @@
+form {
+margin: 0px;
+padding: 0px;
+}
+a:visited {
+color: #336799;
+}
+#shadow {
+background-image: none;
+}
+.logo {
+background-image: url('../images/assinatura/logo.gif');
+background-position: 0px 0;
+background-color: transparent;
+}
+.footerleft {
+display: none;
+}
+.shadowbottom {
+background-image: url('../images/assinatura/content-bottom.gif');
+position: relative;
+}
+.top {
+display: none;
+}
+#left .header {
+padding-top: 7px;
+}
+#right .header {
+padding-top: 7px;
+}
+#right {
+padding-right: 5px;
+}
+#left .closed{
+background-image: url('../images/assinatura/bullet_toggle_plus.gif');
+background-repeat: no-repeat;
+background-position: center left;
+border-bottom: 1px dotted #aaa;
+font-size: 18px;
+padding: 0 0 0px 17px;
+margin-bottom: 3px;
+height: 16px;
+}
+
+#left .open{
+background-image: url('../images/assinatura/bullet_toggle_minus.gif');
+background-repeat: no-repeat;
+background-position: center left;
+border-bottom: 1px dotted #aaa;
+font-size: 18px;
+padding: 0 0 0px 17px;
+margin-bottom: 3px;
+height: 16px;
+}
+.footertop {
+position: relative;
+top: 7px;
+}
+.column {
+margin: 0px;
+}
+.boxbottom {
+position: relative;
+bottom: 1px;
+}
+.box {
+
+}
+.attn {
+position: static;
+}
+.continue {
+cursor: pointer;
+outline: 0px;
+border: 0px;
+}
+.complete {
+background-image: url('../images/assinatura/createacct.png');
+outline: 0px;
+border: 0px;
+cursor: pointer;
+}
+
+.dmnright {
+position: relative;
+top: 20px;
+padding: 0px;
+}
+.selectbox {
+padding-top: 0px;
+}
+.dmntype {
+padding-top: 10px;
+}
+.coupbottom {
+border: none;
+border: 0px solid #fff;
+}
+.options input {
+top: 0px;
+}
+.agree input {
+top: 0px;
+}
+.column table {
+margin: 5px 5px 5px 5px;
+}
+.column input {
+font-size: 14px;
+font-weight: bold;
+color: #333;
+display: inline;
+margin: 0 0 1px 0;
+padding: 1px;
+}
+.cc {
+margin-top: 10px;
+}
+.box td {
+padding: 2px 0 2px 0;
+}
+.agree {
+height: 20px;
+background-image: none;
+padding-bottom: 5px;
+margin-bottom: 10px;
+}
+.titlebar {
+background-image: none;
+}
+.boxhead {
+background-image: url('../images/assinatura/bxtopie.png');
+}
+.large{ 
+background-image: url('../images/assinatura/bxtop.png');
+}
+.customizebutton {
+background-image: url('../images/assinatura/customize.png');
+background-repeat: no-repeat;
+background-position: center;
+border: none;
+width: 147px;
+height: 39px;
+background-color: transparent;
+float: right;
+position: relative;
+top: 15px;
+cursor: pointer;
+}
+.selected_tab a:link, .selected_tab a:visited{
+height: 15px;
+padding: 5px 0 5px 0px;
+color: #fff;
+}
+.unselected_tab a:link, .unselected_tab a:visited{
+height: 15px;
+padding: 5px 0 5px 0px;
+color: #336799;
+}
+.tabbox {
+position: relative;
+top: -20px;
+
+}
+.imglist li {
+background-image: url('../images/assinatura/acceptie.gif');
+}
+
+.horizontal {
+	margin-top: 12px;
+	margin-left: 15px;
+	}
+
+	.node li {
+	background: none;
+	}
+.vpsteaser li {
+background-image: url('../images/assinatura/acceptie.gif');
+}
+.radios {
+position: relative;
+top: -4px;
+}
+.ordertwo {
+}
+.ordertwo .plan2{
+text-align: center;
+width: 160px;
+}
+.ordertwo .price2{
+margin-right: 50px;
+text-align: left;
+float: right;
+width: 160px;
+}
+.ordertwo select {
+font-size: 16px;
+font-family: tahoma; 
+margin-bottom: 0px;
+padding: 2px;
+width: 140px;
+
+}
+.bigbox li {
+background-image: url('../images/assinatura/acceptie.gif');
+}
+.cpanimg {
+background-image: url('../images/assinatura/cpanel-whm.gif');
+}
+.siteimg {
+background-image: url('../images/assinatura/siteimg.gif');
+}
+.horizontal {
+position: relative; 
+left: 25px;
+}
+
+.box {
+padding: 15px 15px 0px 15px;
+margin-bottom: 0px;
+width: 703px;
+}
+#full {
+padding: 10px 10px 0 25px;
+}
+#left .content {
+margin-bottom: 0px;
+}

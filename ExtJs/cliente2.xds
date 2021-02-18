@@ -1,0 +1,600 @@
+{
+    "name": "Fornecedor.xds",
+    "projectId": "383DE517-A710-4973-955D-05D134396B8F",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "cadastrofornecedor",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Cadastro de fornecedor",
+                "width": 674,
+                "height": 484,
+                "iconCls": "fornecedor16",
+                "layout": "anchor"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 0,
+                    "userConfig": {
+                        "title": "",
+                        "width": 666,
+                        "height": 400,
+                        "anchor": "100 100",
+                        "layout": "absolute",
+                        "id": "<?php echo $namespace?>municipal<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>municipal<?php echo $namespace?>post"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 10,
+                                "y": 6,
+                                "width": 642,
+                                "height": 412,
+                                "layout": "form",
+                                "labelAlign": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Codigo",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 100,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>codigo",
+                                        "itemId": "<?php echo $namespace?>codigo",
+                                        "name": "<?php echo $namespace?>codigo"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Nome",
+                                        "anchor": "100%",
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>nome",
+                                        "itemId": "<?php echo $namespace?>nome",
+                                        "name": "<?php echo $namespace?>nome"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField2",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Endereço",
+                                        "anchor": "100%",
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>endereco",
+                                        "itemId": "<?php echo $namespace?>endereco",
+                                        "name": "<?php echo $namespace?>endereco"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField3",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Bairro",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>bairro",
+                                        "itemId": "<?php echo $namespace?>bairro",
+                                        "name": "<?php echo $namespace?>bairro"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField4",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField4",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Cidade",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>cidade",
+                                        "itemId": "<?php echo $namespace?>cidade",
+                                        "name": "<?php echo $namespace?>cidade"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField5",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField5",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Estado",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>uf",
+                                        "itemId": "<?php echo $namespace?>uf",
+                                        "name": "<?php echo $namespace?>uf"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField6",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField6",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "CEP",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 90,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>cep",
+                                        "itemId": "<?php echo $namespace?>cep",
+                                        "name": "<?php echo $namespace?>cep"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField7",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField7",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Telefone",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>telefone1",
+                                        "itemId": "<?php echo $namespace?>telefone1",
+                                        "name": "<?php echo $namespace?>telefone1"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField8",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField8",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Celular",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "id": "<?php echo $namespace?>telefone2",
+                                        "itemId": "<?php echo $namespace?>telefone2",
+                                        "name": "<?php echo $namespace?>telefone2"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField9",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField9",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Fax",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "id": "<?php echo $namespace?>telefone3",
+                                        "itemId": "<?php echo $namespace?>telefone3",
+                                        "name": "<?php echo $namespace?>telefone3"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField10",
+                                    "cid": "combobox",
+                                    "jsClass": "MyTextField10",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Tipo de Pessoa",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>tipo",
+                                        "itemId": "<?php echo $namespace?>tipo",
+                                        "name": "<?php echo $namespace?>tipo",
+                                        "store": "<?php echo $namespace?>tipo"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField11",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField11",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "CNPJ/CPF",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>cnpj",
+                                        "itemId": "<?php echo $namespace?>cnpj",
+                                        "name": "<?php echo $namespace?>cnpj"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField12",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "I. Estadual",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "id": "<?php echo $namespace?>estadual",
+                                        "itemId": "<?php echo $namespace?>estadual",
+                                        "name": "<?php echo $namespace?>estadual"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField13",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "I. Municipal",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "id": "<?php echo $namespace?>municipal<?php echo $namespace?>estaduall",
+                                        "itemId": "<?php echo $namespace?>municipal<?php echo $namespace?>estaduall",
+                                        "name": "<?php echo $namespace?>municipal<?php echo $namespace?>estaduall"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField14",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Contato",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "id": "<?php echo $namespace?>municipal<?php echo $namespace?>contato",
+                                        "itemId": "<?php echo $namespace?>municipal<?php echo $namespace?>contato",
+                                        "name": "<?php echo $namespace?>municipal<?php echo $namespace?>contato"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField15",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "E-mail",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150,
+                                        "id": "<?php echo $namespace?>municipal<?php echo $namespace?>email",
+                                        "itemId": "<?php echo $namespace?>municipal<?php echo $namespace?>email",
+                                        "name": "<?php echo $namespace?>municipal<?php echo $namespace?>email"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyFieldSet",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Observações",
+                                "x": 277,
+                                "y": 83,
+                                "width": 374,
+                                "height": 330,
+                                "layout": "absolute"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextArea",
+                                    "cid": "textarea",
+                                    "jsClass": "MyTextArea",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "anchor": "100%",
+                                        "fieldLabel": "Label",
+                                        "width": 242,
+                                        "height": 287,
+                                        "id": "<?php echo $namespace?>municipal<?php echo $namespace?>obs",
+                                        "itemId": "<?php echo $namespace?>municipal<?php echo $namespace?>obs",
+                                        "name": "<?php echo $namespace?>municipal<?php echo $namespace?>obs"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 461,
+                                "y": 420,
+                                "width": 95
+                            }
+                        },
+                        {
+                            "id": "MyButton2",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "x": 560,
+                                "y": 420,
+                                "width": 95
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyForm1",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 0,
+                    "userConfig": {
+                        "title": "",
+                        "width": 666,
+                        "height": 400,
+                        "anchor": "100 100",
+                        "layout": "absolute"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer1",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 10,
+                                "y": 6,
+                                "width": 642,
+                                "height": 412,
+                                "layout": "form",
+                                "labelAlign": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField16",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Codigo",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 100
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField17",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Nome",
+                                        "anchor": "100%"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField18",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Endereço",
+                                        "anchor": "100%"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField19",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Bairro",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField20",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField4",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Cidade",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField21",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField5",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Estado",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField22",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField6",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "CEP",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 90
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField23",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField7",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Telefone",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField24",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField8",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Celular",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField25",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField9",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Fax",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyCombo",
+                                    "cid": "combobox",
+                                    "jsClass": "MyTextField10",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Tipo de Pessoa",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField26",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField11",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "CNPJ/CPF",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField27",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "I. Estadual",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField28",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "I. Municipal",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField29",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Contato",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField30",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField12",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "E-mail",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 150
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyFieldSet1",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Observações",
+                                "x": 277,
+                                "y": 83,
+                                "width": 374,
+                                "height": 330,
+                                "layout": "absolute"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextArea1",
+                                    "cid": "textarea",
+                                    "jsClass": "MyTextArea",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "anchor": "100%",
+                                        "fieldLabel": "Label",
+                                        "width": 242,
+                                        "height": 287
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 38,
+                                "y": 436,
+                                "width": 95
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

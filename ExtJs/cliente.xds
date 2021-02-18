@@ -1,0 +1,1309 @@
+{
+    "name": "cliente.xds",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": ".",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "1.2.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "type": "window",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 439,
+                "width": 670,
+                "iconCls": "cliente16",
+                "title": "Cadastro de Cliente",
+                "designer|userClassName": "cadcliente"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "type": "form",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post",
+                        "autoScroll": null,
+                        "height": 462,
+                        "width": 768,
+                        "layout": "absolute",
+                        "title": "",
+                        "designer|userClassName": "MyForm",
+                        "designer|snapToGrid": 5
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "type": "container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 40,
+                                "width": 175,
+                                "layout": "form",
+                                "designer|userClassName": "MyContainer",
+                                "container|labelAlign": "right",
+                                "container|labelPad": null,
+                                "container|labelWidth": 50,
+                                "layout|x": 5,
+                                "layout|y": 10
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "type": "textfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "<?php echo $namespace?>codigo",
+                                        "itemId": "<?php echo $namespace?>codigo",
+                                        "name": "<?php echo $namespace?>codigo",
+                                        "designer|userClassName": "MyTextField",
+                                        "layout|anchor": "100%",
+                                        "layout|fieldLabel": "Codigo"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyContainer1",
+                            "type": "container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 35,
+                                "width": 470,
+                                "layout": "form",
+                                "designer|userClassName": "MyContainer",
+                                "container|labelAlign": "right",
+                                "container|labelPad": null,
+                                "container|labelWidth": 50,
+                                "layout|x": 180,
+                                "layout|y": 10
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField1",
+                                    "type": "textfield",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "id": "<?php echo $namespace?>nome",
+                                        "itemId": "<?php echo $namespace?>nome",
+                                        "name": "<?php echo $namespace?>nome",
+                                        "designer|userClassName": "MyTextField",
+                                        "layout|anchor": "100%",
+                                        "layout|fieldLabel": "Cliente"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyTabPanel",
+                            "type": "tabpanel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 325,
+                                "width": 635,
+                                "activeTab": 2,
+                                "designer|userClassName": "MyTabPanel",
+                                "layout|x": 15,
+                                "layout|y": 40
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyPanel",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 31,
+                                        "layout": "absolute",
+                                        "title": "Dados basicos",
+                                        "designer|userClassName": "MyPanel",
+                                        "designer|snapToGrid": 5
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyContainer2",
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 270,
+                                                "width": 280,
+                                                "layout": "form",
+                                                "designer|userClassName": "MyContainer2",
+                                                "container|labelAlign": "right",
+                                                "layout|x": 10,
+                                                "layout|y": 5
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyCombo",
+                                                    "type": "combobox",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>tipo",
+                                                        "itemId": "<?php echo $namespace?>tipo",
+                                                        "name": "<?php echo $namespace?>tipo",
+                                                        "store": "tipo<?php echo $namespace?>",
+                                                        "triggerAction": "all",
+                                                        "designer|userClassName": "MyCombo",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Tipo de pessoa"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField2",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>doc",
+                                                        "itemId": "<?php echo $namespace?>doc",
+                                                        "name": "<?php echo $namespace?>doc",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "CPF/CNPJ"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField3",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>estadual",
+                                                        "itemId": "<?php echo $namespace?>estadual",
+                                                        "name": "<?php echo $namespace?>estadual",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "I. Estadual"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField4",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>municipal",
+                                                        "itemId": "<?php echo $namespace?>municipal",
+                                                        "name": "<?php echo $namespace?>municipal",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "I. Municipal"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField5",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>contato",
+                                                        "itemId": "<?php echo $namespace?>contato",
+                                                        "name": "<?php echo $namespace?>contato",
+                                                        "designer|userClassName": "MyTextField12",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Contato"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField6",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>email",
+                                                        "itemId": "<?php echo $namespace?>email",
+                                                        "name": "<?php echo $namespace?>email",
+                                                        "designer|userClassName": "MyTextField12",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "E-mail"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField7",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>telefone",
+                                                        "itemId": "<?php echo $namespace?>telefone",
+                                                        "style": "<?php echo $ptel;?>",
+                                                        "name": "<?php echo $namespace?>telefone",
+                                                        "designer|userClassName": "MyTextField13",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Telefone"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField8",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>celular",
+                                                        "itemId": "<?php echo $namespace?>celular",
+                                                        "style": "<?php echo $ptel;?>",
+                                                        "name": "<?php echo $namespace?>celular",
+                                                        "designer|userClassName": "MyTextField14",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Celular"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField9",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>fax",
+                                                        "itemId": "<?php echo $namespace?>fax",
+                                                        "style": "<?php echo $ptel;?>",
+                                                        "name": "<?php echo $namespace?>fax",
+                                                        "designer|userClassName": "MyTextField15",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Fax"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyDateField",
+                                                    "type": "datefield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>inicio",
+                                                        "itemId": "<?php echo $namespace?>inicio",
+                                                        "name": "<?php echo $namespace?>inicio",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Data incio"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyDateField1",
+                                                    "type": "datefield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>reajuste",
+                                                        "itemId": "<?php echo $namespace?>reajuste",
+                                                        "name": "<?php echo $namespace?>reajuste",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Data de reajuste"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyContainer3",
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 270,
+                                                "width": 310,
+                                                "layout": "form",
+                                                "designer|userClassName": "MyContainer2",
+                                                "container|labelAlign": "right",
+                                                "layout|x": 300,
+                                                "layout|y": 5
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTreePanel",
+                                                    "type": "treepanel",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>rota",
+                                                        "itemId": "<?php echo $namespace?>rota",
+                                                        "autoScroll": true,
+                                                        "height": 115,
+                                                        "width": 203,
+                                                        "autoLoad": null,
+                                                        "floating": null,
+                                                        "title": "",
+                                                        "lines": false,
+                                                        "rootVisible": false,
+                                                        "designer|userClassName": "MyTreePanel",
+                                                        "layout|fieldLabel": "Rota"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "MyAsyncTreeNode",
+                                                            "type": "asynctreenode",
+                                                            "reference": {
+                                                                "name": "root",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "text": "Tree Node",
+                                                                "designer|userClassName": "MyAsyncTreeNode"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "MyTreeLoader",
+                                                            "type": "treeloader",
+                                                            "reference": {
+                                                                "name": "loader",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyTreeLoader"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "MyTextArea",
+                                                    "type": "textarea",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>extra",
+                                                        "itemId": "<?php echo $namespace?>extra",
+                                                        "height": 50,
+                                                        "name": "<?php echo $namespace?>extra",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Extra"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextArea1",
+                                                    "type": "textarea",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>extra2",
+                                                        "itemId": "<?php echo $namespace?>extra2",
+                                                        "height": 50,
+                                                        "name": "<?php echo $namespace?>extra2",
+                                                        "designer|userClassName": "MyTextField16",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Extra 2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextArea2",
+                                                    "type": "textarea",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>extra3",
+                                                        "itemId": "<?php echo $namespace?>extra3",
+                                                        "height": 50,
+                                                        "name": "<?php echo $namespace?>extra3",
+                                                        "designer|userClassName": "MyCombo",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Extra 3"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyPanel1",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "absolute",
+                                        "title": "Endereço",
+                                        "designer|userClassName": "MyPanel1",
+                                        "designer|snapToGrid": 5
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyFieldSet",
+                                            "type": "fieldset",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 190,
+                                                "width": 305,
+                                                "layout": null,
+                                                "title": "Endereço de Cobrança",
+                                                "designer|userClassName": "MyFieldSet",
+                                                "container|labelAlign": "right",
+                                                "container|labelWidth": 55,
+                                                "layout|x": 5,
+                                                "layout|y": 5
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTextField10",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>endereco1",
+                                                        "itemId": "<?php echo $namespace?>endereco1",
+                                                        "name": "<?php echo $namespace?>endereco1",
+                                                        "designer|userClassName": "MyTextField2",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Endereço"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField11",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>numero1",
+                                                        "itemId": "<?php echo $namespace?>numero1",
+                                                        "boxMaxWidth": 50,
+                                                        "boxMinWidth": null,
+                                                        "name": "<?php echo $namespace?>numero1",
+                                                        "designer|userClassName": "MyTextField2",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Numero"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField13",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>bairro1",
+                                                        "itemId": "<?php echo $namespace?>bairro1",
+                                                        "name": "<?php echo $namespace?>bairro1",
+                                                        "designer|userClassName": "MyTextField3",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Bairro"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField14",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>cidade1",
+                                                        "itemId": "<?php echo $namespace?>cidade1",
+                                                        "name": "<?php echo $namespace?>cidade1",
+                                                        "designer|userClassName": "MyTextField4",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Cidade"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField15",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>cep1",
+                                                        "itemId": "<?php echo $namespace?>cep1",
+                                                        "name": "<?php echo $namespace?>cep1",
+                                                        "designer|userClassName": "MyTextField5",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Cep"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField16",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>estado1",
+                                                        "itemId": "<?php echo $namespace?>estado1",
+                                                        "boxMaxWidth": 50,
+                                                        "name": "<?php echo $namespace?>estado1",
+                                                        "designer|userClassName": "MyTextField6",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "UF"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyFieldSet1",
+                                            "type": "fieldset",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 190,
+                                                "width": 295,
+                                                "layout": null,
+                                                "title": "Endereço de coleta",
+                                                "designer|userClassName": "MyFieldSet",
+                                                "container|labelAlign": "right",
+                                                "container|labelWidth": 55,
+                                                "layout|x": 325,
+                                                "layout|y": 5
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTextField17",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>endereco",
+                                                        "itemId": "<?php echo $namespace?>endereco",
+                                                        "width": 122,
+                                                        "name": "<?php echo $namespace?>endereco",
+                                                        "designer|userClassName": "MyTextField2",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Endereço"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField12",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>numero",
+                                                        "itemId": "<?php echo $namespace?>numero",
+                                                        "boxMaxWidth": 50,
+                                                        "boxMinWidth": null,
+                                                        "name": "<?php echo $namespace?>numero",
+                                                        "designer|userClassName": "MyTextField2",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Numero"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField18",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>bairro",
+                                                        "itemId": "<?php echo $namespace?>bairro",
+                                                        "name": "<?php echo $namespace?>bairro",
+                                                        "designer|userClassName": "MyTextField3",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Bairro"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField19",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>cidade",
+                                                        "itemId": "<?php echo $namespace?>cidade",
+                                                        "name": "<?php echo $namespace?>cidade",
+                                                        "designer|userClassName": "MyTextField4",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Cidade"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField20",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>cep",
+                                                        "itemId": "<?php echo $namespace?>cep",
+                                                        "name": "<?php echo $namespace?>cep",
+                                                        "designer|userClassName": "MyTextField5",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "Cep"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyTextField21",
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>estado",
+                                                        "itemId": "<?php echo $namespace?>estado",
+                                                        "name": "<?php echo $namespace?>estado",
+                                                        "designer|userClassName": "MyTextField6",
+                                                        "layout|anchor": "100%",
+                                                        "layout|fieldLabel": "UF"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyFieldSet2",
+                                            "type": "fieldset",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 80,
+                                                "width": 615,
+                                                "layout": "absolute",
+                                                "title": "Observações",
+                                                "designer|userClassName": "MyFieldSet2",
+                                                "designer|snapToGrid": 10,
+                                                "layout|x": 5,
+                                                "layout|y": 195
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyTextArea3",
+                                                    "type": "textarea",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "id": "<?php echo $namespace?>obs",
+                                                        "itemId": "<?php echo $namespace?>obs",
+                                                        "height": 45,
+                                                        "name": "<?php echo $namespace?>obs",
+                                                        "designer|userClassName": "MyTextArea",
+                                                        "layout|anchor": "100%",
+                                                        "layout|x": 0,
+                                                        "layout|y": 0
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen5072",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "anchor",
+                                        "title": "Endereço de coleta",
+                                        "designer|userClassName": "MyPanel3"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen8128",
+                                            "type": "editorgrid",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "<?php echo $namespace?>gridcoleta",
+                                                "height": 106,
+                                                "width": 474,
+                                                "hideBorders": true,
+                                                "title": "",
+                                                "designer|userClassName": "MyEditorGrid",
+                                                "layout|anchor": "100% 100%",
+                                                "layout|x": 34,
+                                                "layout|y": 51
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "ExtBox1-ext-gen8140",
+                                                    "type": "gridcolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "endereco",
+                                                        "header": "Endereço",
+                                                        "sortable": true,
+                                                        "width": 230,
+                                                        "designer|userClassName": "MyColumn2"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen8149",
+                                                            "type": "textfield",
+                                                            "reference": {
+                                                                "name": "editor",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyTextField23"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen8154",
+                                                    "type": "numbercolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "align": "right",
+                                                        "dataIndex": "numero",
+                                                        "header": "Number",
+                                                        "sortable": true,
+                                                        "width": 60,
+                                                        "designer|userClassName": "MyNumberColumn2"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen8164",
+                                                            "type": "numberfield",
+                                                            "reference": {
+                                                                "name": "editor",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyNumberField2"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen12907",
+                                                    "type": "gridcolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "bairro",
+                                                        "header": "Bairro",
+                                                        "sortable": true,
+                                                        "width": 100,
+                                                        "designer|userClassName": "MyColumn2"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen12910",
+                                                            "type": "textfield",
+                                                            "reference": {
+                                                                "name": "editor",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyTextField23"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen14013",
+                                                    "type": "gridcolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "cidade",
+                                                        "header": "Cidade",
+                                                        "sortable": true,
+                                                        "width": 100,
+                                                        "designer|userClassName": "MyColumn2"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen14016",
+                                                            "type": "textfield",
+                                                            "reference": {
+                                                                "name": "editor",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyTextField23"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen14377",
+                                                    "type": "gridcolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "cep",
+                                                        "header": "Cep",
+                                                        "sortable": true,
+                                                        "width": 75,
+                                                        "designer|userClassName": "MyColumn2"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen14380",
+                                                            "type": "textfield",
+                                                            "reference": {
+                                                                "name": "editor",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyTextField23"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen15149",
+                                                    "type": "gridcolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "uf",
+                                                        "header": "UF",
+                                                        "sortable": true,
+                                                        "width": 30,
+                                                        "designer|userClassName": "MyColumn2"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen15152",
+                                                            "type": "textfield",
+                                                            "reference": {
+                                                                "name": "editor",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyTextField23"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "ExtBox1-ext-gen10240",
+                                                    "type": "toolbar",
+                                                    "reference": {
+                                                        "name": "tbar",
+                                                        "type": "object"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|userClassName": "MyToolbar",
+                                                        "dock": "tbar"
+                                                    },
+                                                    "cn": [
+                                                        {
+                                                            "id": "ExtBox1-ext-gen10725",
+                                                            "type": "button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "width": 150,
+                                                                "text": "Incluir novo endereço",
+                                                                "designer|userClassName": "MyButton4"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "ExtBox1-ext-gen10566",
+                                                            "type": "tbfill",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyFill"
+                                                            }
+                                                        },
+                                                        {
+                                                            "id": "ExtBox1-ext-gen11016",
+                                                            "type": "button",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "width": 150,
+                                                                "text": "Excluir endereço",
+                                                                "designer|userClassName": "MyButton4"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyPanel2",
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "absolute",
+                                        "title": "Tabela de preço",
+                                        "designer|userClassName": "MyPanel2",
+                                        "designer|snapToGrid": 5
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyGrid",
+                                            "type": "grid",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "height": 235,
+                                                "width": 635,
+                                                "border": false,
+                                                "title": "",
+                                                "store": "gridclienteservico<?php echo $namespace?>",
+                                                "designer|userClassName": "MyGrid",
+                                                "layout|x": -1,
+                                                "layout|y": 50
+                                            },
+                                            "cn": [
+                                                {
+                                                    "id": "MyColumn",
+                                                    "type": "gridcolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "dataIndex": "descricao",
+                                                        "editable": false,
+                                                        "header": "Serviço",
+                                                        "resizable": null,
+                                                        "sortable": true,
+                                                        "width": 500,
+                                                        "designer|userClassName": "MyColumn"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "MyColumn1",
+                                                    "type": "numbercolumn",
+                                                    "reference": {
+                                                        "name": "columns",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "align": "right",
+                                                        "dataIndex": "valor",
+                                                        "editable": false,
+                                                        "header": "Valor",
+                                                        "resizable": null,
+                                                        "sortable": true,
+                                                        "width": 100,
+                                                        "designer|userClassName": "MyColumn1"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "MyLabel",
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 55,
+                                                "text": "Serviço",
+                                                "designer|userClassName": "MyLabel",
+                                                "layout|x": 5,
+                                                "layout|y": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "MyLabel1",
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 55,
+                                                "text": "Valor",
+                                                "designer|userClassName": "MyLabel",
+                                                "layout|x": 365,
+                                                "layout|y": 5
+                                            }
+                                        },
+                                        {
+                                            "id": "MyCombo1",
+                                            "type": "combobox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "<?php echo $namespace?>0servico",
+                                                "itemId": "<?php echo $namespace?>0servico",
+                                                "width": 355,
+                                                "name": "<?php echo $namespace?>0servico",
+                                                "resizable": true,
+                                                "designer|userClassName": "MyCombo2",
+                                                "layout|x": 5,
+                                                "layout|y": 20
+                                            }
+                                        },
+                                        {
+                                            "id": "MyNumberField",
+                                            "type": "numberfield",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "id": "<?php echo $namespace?>0valor",
+                                                "itemId": "<?php echo $namespace?>0valor",
+                                                "width": 90,
+                                                "name": "<?php echo $namespace?>0valor",
+                                                "preventMark": true,
+                                                "decimalSeparator": ",",
+                                                "designer|userClassName": "MyNumberField",
+                                                "layout|x": 365,
+                                                "layout|y": 20
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton",
+                                            "type": "button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 80,
+                                                "text": "Adicionar",
+                                                "designer|userClassName": "MyButton",
+                                                "layout|x": 465,
+                                                "layout|y": 20
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton1",
+                                            "type": "button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 80,
+                                                "text": "Remover",
+                                                "designer|userClassName": "MyButton",
+                                                "layout|x": 550,
+                                                "layout|y": 20
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton2",
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 22,
+                                "width": 95,
+                                "text": "Salvar",
+                                "designer|userClassName": "MyButton2",
+                                "layout|x": 555,
+                                "layout|y": 375
+                            }
+                        },
+                        {
+                            "id": "MyButton3",
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 22,
+                                "width": 95,
+                                "text": "Cancelar",
+                                "designer|userClassName": "MyButton2",
+                                "layout|x": 15,
+                                "layout|y": 375
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": [],
+    "framework": "ext33"
+}

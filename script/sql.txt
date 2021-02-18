@@ -1,0 +1,80 @@
+CREATE TABLE `tblservicos` (
+`idservico` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`codigo` VARCHAR( 50 ) NOT NULL ,
+`descricao` VARCHAR( 200 ) NOT NULL ,
+`unidade` VARCHAR( 10 ) NOT NULL ,
+`precounitario` DOUBLE NOT NULL ,
+`precosn` VARCHAR( 3 ) NOT NULL ,
+`rc` VARCHAR( 3 ) NOT NULL ,
+`qtd` VARCHAR( 3 ) NOT NULL ,
+`imposto` VARCHAR( 10 ) NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE `tblfornecedor` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`codigo` VARCHAR( 50 ) NOT NULL ,
+`nome` VARCHAR( 200 ) NOT NULL ,
+`endereco` VARCHAR( 200 ) NOT NULL ,
+`bairro` VARCHAR( 100 ) NOT NULL ,
+`cidade` VARCHAR( 100 ) NOT NULL ,
+`cep` VARCHAR( 10 ) NOT NULL ,
+`uf` VARCHAR( 10 ) NOT NULL ,
+`telefone1` VARCHAR( 15 ) NOT NULL ,
+`telefone2` VARCHAR( 15 ) NOT NULL ,
+`telefone3` VARCHAR( 15 ) NOT NULL ,
+`cnpj` VARCHAR( 20 ) NOT NULL ,
+`estadual` VARCHAR( 20 ) NOT NULL ,
+`municipal` VARCHAR( 20 ) NOT NULL ,
+`contato` VARCHAR( 20 ) NOT NULL ,
+`email` VARCHAR( 50 ) NOT NULL ,
+`obs` VARCHAR( 1000 ) NOT NULL ,
+`tipo` VARCHAR( 10 ) NOT NULL
+) ENGINE = MYISAM ;
+
+CREATE TABLE `tblrota` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`codigo` VARCHAR( 10 ) NOT NULL ,
+`descricao` VARCHAR( 100 ) NOT NULL ,
+`obs` TEXT NOT NULL
+) ENGINE = MYISAM ;
+
+
+CREATE TABLE `tblcliente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `codigo` varchar(20) DEFAULT NULL,
+  `nome` varchar(200) DEFAULT NULL,
+  `tipo` int(11) DEFAULT NULL,
+  `doc` varchar(20) DEFAULT NULL,
+  `estadual` varchar(20) DEFAULT NULL,
+  `municipal` varchar(20) DEFAULT NULL,
+  `idrota` int(11) DEFAULT NULL,
+  `contato` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `fax` varchar(20) DEFAULT NULL,
+  `celular` varchar(20) DEFAULT NULL,
+  `inicio` varchar(20) DEFAULT NULL,
+  `extra` text,
+  `extra2` text,
+  `extra3` text,
+  `endereco` varchar(100) DEFAULT NULL,
+  `bairro` varchar(20) DEFAULT NULL,
+  `cidade` varchar(20) DEFAULT NULL,
+  `estado` varchar(10) DEFAULT NULL,
+  `cep` int(11) DEFAULT NULL,
+  `endereco1` varchar(100) DEFAULT NULL,
+  `bairro1` varchar(20) DEFAULT NULL,
+  `cidade1` varchar(20) DEFAULT NULL,
+  `estado1` varchar(20) DEFAULT NULL,
+  `cep1` varchar(20) DEFAULT NULL,
+  `obs` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tblclienteservico` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idcliente` int(11) DEFAULT NULL,
+  `idservico` int(11) DEFAULT NULL,
+  `valor` double(15,3) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

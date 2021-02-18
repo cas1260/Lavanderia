@@ -1,0 +1,311 @@
+{
+    "name": "relatorio.xds",
+    "projectId": "C574DC9B-489E-4F93-98DF-3EF8AFEFD8A4",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "wb_relatorio",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Relatório de serviços prestados",
+                "width": 618,
+                "height": 399,
+                "iconCls": "contas16",
+                "layout": "absolute"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 0,
+                    "userConfig": {
+                        "title": "",
+                        "x": 0,
+                        "y": 0,
+                        "width": 600,
+                        "height": 260,
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post",
+                        "layout": "absolute",
+                        "anchor": "100% 100%"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 190,
+                                "y": 10,
+                                "width": 235,
+                                "height": 25,
+                                "layout": "form",
+                                "labelWidth": 120,
+                                "labelAlign": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyDateField",
+                                    "cid": "datefield",
+                                    "jsClass": "MyDateField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Data Inicial",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>txtdatainicial",
+                                        "itemId": "<?php echo $namespace?>txtdatainicial",
+                                        "name": "<?php echo $namespace?>txtdatainicial",
+                                        "boxMaxWidth": 100,
+                                        "tabIndex": 0,
+                                        "format": "d/m/y"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyContainer1",
+                            "cid": "container",
+                            "jsClass": "MyContainer1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 10,
+                                "y": 10,
+                                "width": 130,
+                                "height": 110,
+                                "html": "<img src = 'images/frm/contas.png'>"
+                            }
+                        },
+                        {
+                            "id": "MyContainer2",
+                            "cid": "container",
+                            "jsClass": "MyContainer1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 385,
+                                "y": 10,
+                                "width": 215,
+                                "height": 35,
+                                "layout": "form",
+                                "labelAlign": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyDateField1",
+                                    "cid": "datefield",
+                                    "jsClass": "MyDateField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Data Final",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>txtdatafinal",
+                                        "itemId": "<?php echo $namespace?>txtdatafinal",
+                                        "name": "<?php echo $namespace?>txtdatafinal",
+                                        "boxMaxWidth": 100,
+                                        "tabIndex": 1,
+                                        "format": "d/m/y"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Pesquisar",
+                                "x": 139,
+                                "y": 339,
+                                "width": 90,
+                                "tabIndex": 11,
+                                "id": "<?php echo $namespace?>pesq",
+                                "itemId": "<?php echo $namespace?>pesq"
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 496,
+                                "y": 339,
+                                "width": 90,
+                                "tabIndex": 12,
+                                "id": "<?php echo $namespace?>cancel",
+                                "itemId": "<?php echo $namespace?>cancel"
+                            }
+                        },
+                        {
+                            "id": "MyFieldSet",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Clientes:",
+                                "x": 142,
+                                "y": 38,
+                                "width": 445,
+                                "height": 145,
+                                "layout": "absolute"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTreePanel",
+                                    "cid": "treepanel",
+                                    "jsClass": "MyTreePanel",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "",
+                                        "x": 0,
+                                        "y": 0,
+                                        "anchor": "100% 100%",
+                                        "lines": false,
+                                        "rootVisible": false,
+                                        "autoScroll": true,
+                                        "id": "<?php echo $namespace?>cliente"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyAsyncTreeNode",
+                                            "cid": "asynctreenode",
+                                            "jsClass": "MyAsyncTreeNode",
+                                            "dock": "root",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Tree Node"
+                                            }
+                                        },
+                                        {
+                                            "id": "MyTreeLoader",
+                                            "cid": "treeloader",
+                                            "jsClass": "MyTreeLoader",
+                                            "dock": "loader",
+                                            "snapToGrid": 10
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyFieldSet1",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Serviços:",
+                                "x": 141,
+                                "y": 189,
+                                "width": 445,
+                                "height": 145,
+                                "layout": "absolute"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTreePanel1",
+                                    "cid": "treepanel",
+                                    "jsClass": "MyTreePanel",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "",
+                                        "x": 0,
+                                        "y": 0,
+                                        "anchor": "100% 100%",
+                                        "lines": false,
+                                        "rootVisible": false,
+                                        "autoScroll": true,
+                                        "id": "<?php echo $namespace?>servico"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyAsyncTreeNode1",
+                                            "cid": "asynctreenode",
+                                            "jsClass": "MyAsyncTreeNode",
+                                            "dock": "root",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Tree Node"
+                                            }
+                                        },
+                                        {
+                                            "id": "MyTreeLoader1",
+                                            "cid": "treeloader",
+                                            "jsClass": "MyTreeLoader",
+                                            "dock": "loader",
+                                            "snapToGrid": 10
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyCheckbox",
+                            "cid": "checkbox",
+                            "jsClass": "MyCheckbox",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 480,
+                                "y": 43,
+                                "boxLabel": "Selecionar todos",
+                                "id": "chkSelTodosCliente"
+                            }
+                        },
+                        {
+                            "id": "MyCheckbox1",
+                            "cid": "checkbox",
+                            "jsClass": "MyCheckbox",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 479,
+                                "y": 194,
+                                "boxLabel": "Selecionar todos",
+                                "id": "chkSelTodosServico"
+                            }
+                        },
+                        {
+                            "id": "MyTextField",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 207,
+                                "y": 36,
+                                "width": 263,
+                                "id": "pesqcliente"
+                            }
+                        },
+                        {
+                            "id": "MyTextField1",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": 208,
+                                "y": 186,
+                                "width": 263,
+                                "id": "pesqservico"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

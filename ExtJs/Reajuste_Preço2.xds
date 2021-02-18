@@ -1,0 +1,232 @@
+{
+    "name": "Reajuste_Preço2.xds",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": ".",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "1.2.2",
+    "components": [
+        {
+            "id": "ExtBox1-ext-gen1657",
+            "type": "window",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 443,
+                "width": 930,
+                "layout": "absolute",
+                "iconCls": "contasapagar",
+                "title": "Reajuste de preço",
+                "modal": true,
+                "designer|userClassName": "myReajustWin",
+                "designer|snapToGrid": 5
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1953",
+                    "type": "treepanel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "clientes",
+                        "height": 360,
+                        "width": 450,
+                        "title": "Clientes",
+                        "designer|userClassName": "MyTreePanel",
+                        "layout|x": 5,
+                        "layout|y": 5
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen1965",
+                            "type": "asynctreenode",
+                            "reference": {
+                                "name": "root",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Tree Node",
+                                "designer|userClassName": "MyAsyncTreeNode"
+                            }
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen1971",
+                            "type": "treeloader",
+                            "reference": {
+                                "name": "loader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTreeLoader"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen2516",
+                    "type": "treepanel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "servicos",
+                        "height": 360,
+                        "width": 450,
+                        "title": "Serviços",
+                        "designer|userClassName": "MyTreePanel1",
+                        "layout|x": 460,
+                        "layout|y": 5
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen2528",
+                            "type": "asynctreenode",
+                            "reference": {
+                                "name": "root",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Tree Node",
+                                "designer|userClassName": "MyAsyncTreeNode1"
+                            }
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen2534",
+                            "type": "treeloader",
+                            "reference": {
+                                "name": "loader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyTreeLoader1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen3093",
+                    "type": "checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "chkcadastro",
+                        "boxLabel": "Ajudar o preço no cadastro de serviço também",
+                        "designer|userClassName": "MyCheckbox",
+                        "layout|x": 5,
+                        "layout|y": 365
+                    }
+                },
+                {
+                    "id": "ExtBox1-ext-gen3357",
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 55,
+                        "width": 260,
+                        "layout": "form",
+                        "designer|userClassName": "MyContainer",
+                        "container|labelWidth": 150,
+                        "layout|x": 555,
+                        "layout|y": 370
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen3894",
+                            "type": "numberfield",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "ajuste",
+                                "width": 163,
+                                "designer|userClassName": "MyNumberField",
+                                "layout|anchor": "100%",
+                                "layout|fieldLabel": "Reajuste geral em %"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen4120",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "cmdinicio",
+                        "text": "Iniciar o processo",
+                        "designer|userClassName": "MyButton",
+                        "layout|x": 820,
+                        "layout|y": 370
+                    }
+                },
+                {
+                    "id": "ExtBox1-ext-gen1963",
+                    "type": "checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "chkTodosCliente",
+                        "boxLabel": "Selecionar todos",
+                        "designer|userClassName": "MyCheckbox1",
+                        "layout|x": 350,
+                        "layout|y": 10
+                    }
+                },
+                {
+                    "id": "ExtBox1-ext-gen2489",
+                    "type": "checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "chkTodosServicos",
+                        "boxLabel": "Selecionar todos",
+                        "designer|userClassName": "MyCheckbox1",
+                        "layout|x": 805,
+                        "layout|y": 10
+                    }
+                }
+            ]
+        }
+    ],
+    "stores": [],
+    "framework": "ext33"
+}

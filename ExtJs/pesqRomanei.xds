@@ -1,0 +1,303 @@
+{
+    "name": "pesqRomanei.xds",
+    "projectId": "963EAF4D-4FB4-44D9-8145-F5097744E978",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "wWinPesq",
+            "snapToGrid": 5,
+            "userConfig": {
+                "title": "Pesquisa de romanei",
+                "width": 525,
+                "height": 292,
+                "modal": true,
+                "layout": "absolute"
+            },
+            "cn": [
+                {
+                    "id": "MyLabel",
+                    "cid": "label",
+                    "jsClass": "MyLabel",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Data Inicial:",
+                        "x": 105,
+                        "y": 10
+                    }
+                },
+                {
+                    "id": "MyLabel1",
+                    "cid": "label",
+                    "jsClass": "MyLabel",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Data Final:",
+                        "x": 265,
+                        "y": 10
+                    }
+                },
+                {
+                    "id": "MyDateField",
+                    "cid": "datefield",
+                    "jsClass": "MyDateField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "x": 165,
+                        "y": 5,
+                        "id": "txtdatainicial"
+                    }
+                },
+                {
+                    "id": "MyDateField1",
+                    "cid": "datefield",
+                    "jsClass": "MyDateField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "x": 325,
+                        "y": 5,
+                        "id": "txtdatafinal"
+                    }
+                },
+                {
+                    "id": "MyButton",
+                    "cid": "button",
+                    "jsClass": "MyButton",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Pesquisa",
+                        "x": 425,
+                        "y": 5,
+                        "height": 22,
+                        "width": 80,
+                        "id": "cmdpesquisa"
+                    }
+                },
+                {
+                    "id": "MyGrid",
+                    "cid": "grid",
+                    "jsClass": "MyGrid",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Romaneis",
+                        "store": "MeuDadosRomanei",
+                        "x": 5,
+                        "y": 35,
+                        "width": 500,
+                        "height": 195,
+                        "id": "gridromanei"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyColumn",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "os",
+                                "header": "OS",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 50
+                            }
+                        },
+                        {
+                            "id": "MyColumn1",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "data",
+                                "header": "Data",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100
+                            }
+                        },
+                        {
+                            "id": "MyColumn2",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "entrada",
+                                "header": "Entrada",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 80
+                            }
+                        },
+                        {
+                            "id": "MyColumn3",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "pedido",
+                                "header": "Pedido",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 80,
+                                "align": "-ext-undefined-"
+                            }
+                        },
+                        {
+                            "id": "MyColumn4",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "valortotal",
+                                "header": "Valor",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 80,
+                                "align": "right"
+                            }
+                        },
+                        {
+                            "id": "MyColumn5",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "dataIndex": "nf",
+                                "header": "Nf",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 80
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyButton1",
+                    "cid": "button",
+                    "jsClass": "MyButton1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Confirmar",
+                        "x": 310,
+                        "y": 235,
+                        "width": 95,
+                        "id": "cmdconfirma"
+                    }
+                },
+                {
+                    "id": "MyButton2",
+                    "cid": "button",
+                    "jsClass": "MyButton1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Cancelar",
+                        "x": 410,
+                        "y": 235,
+                        "width": 95,
+                        "id": "cmdcancelar"
+                    }
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "id": "MyStore",
+            "cid": "jsonstore",
+            "jsClass": "mydados",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "MeuDadosRomanei",
+                "url": "php/wb_pesquisa_romanei.php",
+                "root": "rows",
+                "totalProperty": "results",
+                "autoDestroy": true
+            },
+            "cn": [
+                {
+                    "id": "MyField",
+                    "cid": "datafield",
+                    "jsClass": "MyField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "os"
+                    }
+                },
+                {
+                    "id": "MyField1",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "data"
+                    }
+                },
+                {
+                    "id": "MyField2",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "entrada"
+                    }
+                },
+                {
+                    "id": "MyField3",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "pedido"
+                    }
+                },
+                {
+                    "id": "MyField4",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "valortotal"
+                    }
+                },
+                {
+                    "id": "MyField5",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "nf"
+                    }
+                },
+                {
+                    "id": "MyField6",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "solicitante"
+                    }
+                },
+                {
+                    "id": "MyField7",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "idromanei"
+                    }
+                }
+            ]
+        }
+    ]
+}

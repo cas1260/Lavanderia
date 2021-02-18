@@ -1,0 +1,173 @@
+{
+    "name": "Mercadoria.xds",
+    "projectId": "183DCB2B-9A9F-44CE-AC07-C8036B1B859F",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "cadmercadoria",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Cadastro de mercadoria",
+                "width": 408,
+                "height": 281,
+                "iconCls": "mercadoria16"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyPanel",
+                    "snapToGrid": 5,
+                    "userConfig": {
+                        "title": "",
+                        "width": 393,
+                        "height": 256,
+                        "layout": "absolute",
+                        "id": "<?php echo $namespace?>post",
+                        "itemId": "<?php echo $namespace?>post"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "x": -36,
+                                "y": 15,
+                                "width": 420,
+                                "height": 220,
+                                "layout": "form",
+                                "labelAlign": "right"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Código",
+                                        "anchor": "100%",
+                                        "boxMaxWidth": 100,
+                                        "id": "<?php echo $namespace?>codigo",
+                                        "itemId": "<?php echo $namespace?>codigo",
+                                        "name": "<?php echo $namespace?>codigo",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Descrição",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>descricao",
+                                        "itemId": "<?php echo $namespace?>descricao",
+                                        "name": "<?php echo $namespace?>descricao",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField2",
+                                    "cid": "numberfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Valor",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>valor",
+                                        "itemId": "<?php echo $namespace?>valor",
+                                        "name": "<?php echo $namespace?>valor",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField3",
+                                    "cid": "numberfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Qtd atual",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>qtd",
+                                        "itemId": "<?php echo $namespace?>qtd",
+                                        "name": "<?php echo $namespace?>qtd",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField4",
+                                    "cid": "numberfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Qtd min.",
+                                        "anchor": "100%",
+                                        "id": "<?php echo $namespace?>qtdminimo",
+                                        "itemId": "<?php echo $namespace?>qtdminimo",
+                                        "name": "<?php echo $namespace?>qtdminimo",
+                                        "allowBlank": false
+                                    }
+                                },
+                                {
+                                    "id": "MyTextArea",
+                                    "cid": "textarea",
+                                    "jsClass": "MyTextArea",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "anchor": "100%",
+                                        "fieldLabel": "Obs.",
+                                        "id": "<?php echo $namespace?>obs",
+                                        "itemId": "<?php echo $namespace?>obs",
+                                        "name": "<?php echo $namespace?>obs"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "x": 285,
+                                "y": 215,
+                                "width": 100
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 70,
+                                "y": 215,
+                                "width": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

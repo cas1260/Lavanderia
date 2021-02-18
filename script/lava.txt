@@ -1,0 +1,38 @@
+CREATE TABLE `tblapropriacao` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idfornecedor` int(11) DEFAULT NULL,
+  `idmercadoria` int(11) DEFAULT NULL,
+  `valor` double(15,2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+);
+
+
+ALTER TABLE  `tblromanei` CHANGE  `valortotal`  `valortotal` DOUBLE( 11, 2 ) NULL DEFAULT NULL
+ALTER TABLE  `tblromanei` CHANGE  `desconto`  `desconto` DOUBLE( 11, 2 ) NULL DEFAULT NULL
+
+
+CREATE TABLE `tblnf` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `numero` int(11) DEFAULT NULL,
+  `natureza` int(11) DEFAULT NULL,
+  `emissao` DATE DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `idcliente` int(11) DEFAULT NULL,
+  `total` double(15,2) DEFAULT NULL,
+  `desconto` double(15,2) DEFAULT NULL,
+  `valortotal` double(15,2) DEFAULT NULL,
+  `idforma` int(11) DEFAULT NULL,
+  `pedido` int(11) DEFAULT NULL,
+  `idvendedor` int(11) DEFAULT NULL,
+  `saida` DATE DEFAULT NULL,
+  `obs` text,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tblitennf` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`idnf` INT NOT NULL ,
+`idromanei` INT NOT NULL
+) ENGINE = MYISAM ;

@@ -1,0 +1,125 @@
+form {
+margin: 0px;
+padding: 0px;
+}
+#shadow {
+background-image: none;
+}
+#content {
+background-color: #fff;
+}
+.logo {
+background-image: url('../images/assinatura/logo.gif');
+background-position: 0px 0;
+background-color: transparent;
+}
+.footerleft {
+display: none;
+}
+.shadowbottom {
+background-image: url('../images/assinatura/content-bottom.gif');
+}
+#left .top {
+display: none;
+}
+.dmnright {
+position: relative;
+top: 20px;
+padding: 0px;
+}
+.selectbox {
+padding-top: 0px;
+}
+.continue {
+cursor: pointer;
+outline: 0px;
+border: 0px;
+}
+.complete {
+background-image: url('../images/assinatura/createacct.png');
+outline: 0px;
+border: 0px;
+cursor: pointer;
+}
+.dmntype {
+padding-top: 10px;
+}
+.or {
+background-image: url('../images/assinatura/or.png');
+background-repeat: no-repeat;
+background-position: center;
+height: 190px;
+}
+.agree {
+height: 20px;
+background-image: none;
+padding-bottom: 5px;
+margin-bottom: 10px;
+}
+.titlebar {
+background-image: none;
+}
+.options input {
+top: 0px;
+}
+.agree input {
+top: 0px;
+}
+.column table {
+width: 95%;
+margin: 5px 5px 5px 5px;
+}
+.column input {
+font-size: 14px;
+font-weight: bold;
+color: #333;
+display: inline;
+margin: 0 0 1px 0;
+padding: 1px;
+}
+.specbox {
+
+}
+.cc {
+margin-top: 0px;
+}
+
+.customizebutton {
+background-image: url('../images/assinatura/customize.png');
+background-repeat: no-repeat;
+background-position: center;
+border: none;
+width: 147px;
+height: 39px;
+background-color: transparent;
+float: right;
+position: relative;
+top: 15px;
+cursor: pointer;
+}
+.tabs {
+position: relative;
+top: 20px;
+}
+.tabbox {
+margin-bottom: 10px;
+}
+.radios {
+position: relative;
+top: -4px;
+}
+.ordertwo .ordernow {
+position: relative;
+
+}
+.ordertwo {
+padding-bottom: 20px;
+margin-bottom: 0px;
+}
+.box {
+margin-bottom: 0px;
+width: 703px;
+}
+.ordertwo .plan2 select{
+position: relative;
+}

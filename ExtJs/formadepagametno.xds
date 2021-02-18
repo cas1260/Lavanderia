@@ -1,0 +1,119 @@
+{
+    "name": "formadepagametno.xds",
+    "projectId": "A719DDC5-47E1-4F26-8794-07D233AAA99E",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "wbformapg",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Forma de pagamento",
+                "width": 495,
+                "height": 138,
+                "layout": "anchor",
+                "iconCls": "formapagamento16"
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "",
+                        "anchor": "100 100",
+                        "layout": "absolute",
+                        "id": "<?php echo $namespace?>post"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyContainer",
+                            "cid": "container",
+                            "jsClass": "MyContainer",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "width": 460,
+                                "height": 50,
+                                "x": 10,
+                                "y": 10,
+                                "layout": "form",
+                                "labelAlign": "right",
+                                "labelWidth": 150
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Descrição",
+                                        "anchor": "100%",
+                                        "allowBlank": false,
+                                        "id": "<?php echo $namespace?>descricao",
+                                        "name": "<?php echo $namespace?>descricao"
+                                    }
+                                },
+                                {
+                                    "id": "MyCombo",
+                                    "cid": "combobox",
+                                    "jsClass": "MyCombo",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "Forma de pagamento",
+                                        "anchor": "100%",
+                                        "allowBlank": false,
+                                        "triggerAction": "all",
+                                        "id": "<?php echo $namespace?>tipo",
+                                        "name": "<?php echo $namespace?>tipo",
+                                        "store": "stored_tipo<?php echo $namespace;?>"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Salvar",
+                                "x": 220,
+                                "y": 70,
+                                "width": 120,
+                                "height": 22
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Cancelar",
+                                "x": 350,
+                                "y": 70,
+                                "width": 120,
+                                "height": 22
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

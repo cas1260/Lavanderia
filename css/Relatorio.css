@@ -1,0 +1,54 @@
+﻿body{font-family:Tahoma;font-size:8pt;margin:0px;padding:0px;color:#000000;background-color:#ffffff;}
+.Relatorio{}
+.Relatorio .Cabecalho, .Relatorio .LinhaCampo, .Relatorio .Linha, .Relatorio .Rodape{clear:both;}
+.Relatorio .Cabecalho{font-size:13pt;text-align:left;overflow:hidden;}
+.Relatorio .Cabecalho .CabecalhoLogo{float:left;width:230px;margin-top:5px;}
+.Relatorio .Cabecalho .CabecalhoLogo img{}
+.Relatorio .Cabecalho .Titulo{margin-top:15px;float:left;padding-left:20px;}
+.Relatorio .LinhaCampo, .Relatorio .Rodape{font-weight:bold;background-color:#000000;color:#ffffff;border-top:#000000 1px solid;border-bottom:#000000 1px solid;border-right:#000000 0px solid;border-left:#000000 0px solid;}
+.Relatorio .Linha{}
+.Relatorio .LinhaCampo .Campo, .Relatorio .Linha .Valor{float:left;padding-left:0.1cm;padding-right:0.1cm;float:left;white-space:nowrap;overflow:hidden;}
+.Relatorio .LinhaCampo .Campo{font-weight:bold;}
+.Relatorio .Linha .Valor{}
+.Relatorio .Rodape{padding-left:0.1cm;padding-right:0.1cm;}
+.Relatorio .Rodape .Texto{float:left;}
+.Relatorio .Rodape .Pagina{float:right;}
+
+
+.Cabecalho{
+	font-size:13pt;
+	text-align:left;
+	overflow:hidden;
+	margin-top:15px;
+	float:left;
+	padding-left:20px;
+}
+.cab1{
+	font-family:Tahoma;
+	font-size:8pt;
+	font-weight:bold;
+	background-color:#000000;
+	color:#ffffff;
+	border-top:#000000 1px solid;
+	border-bottom:#000000 1px solid;
+	border-right:#000000 0px solid;
+	border-left:#000000 0px solid;
+}
+.Valor{
+	font-family:Tahoma;
+	font-size:8pt;
+	padding-left:0.1cm;
+	padding-right:0.1cm;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+.Cabecalho.td{margin-top:15px;float:left;padding-left:20px;}
+.Relatorio .LinhaCampo, .Relatorio .Rodape{font-weight:bold;background-color:#000000;color:#ffffff;border-top:#000000 1px solid;border-bottom:#000000 1px solid;border-right:#000000 0px solid;border-left:#000000 0px solid;}
+.Relatorio .Linha{}
+.Relatorio .LinhaCampo .Campo{font-weight:bold;}
+.Relatorio .Linha .Valor{}
+.Relatorio .Rodape{padding-left:0.1cm;padding-right:0.1cm;}
+.Relatorio .Rodape .Texto{float:left;}
+.Relatorio .Rodape .Pagina{float:right;}
